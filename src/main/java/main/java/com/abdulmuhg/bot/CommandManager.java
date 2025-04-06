@@ -1,6 +1,5 @@
 package main.java.com.abdulmuhg.bot;
 
-import com.yourname.bot.audio.PlayerManager;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.GuildVoiceState;
 import net.dv8tion.jda.api.entities.Member;
@@ -14,7 +13,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
-import java.util.List;
 
 public class CommandManager extends ListenerAdapter {
     private static final Logger LOGGER = LoggerFactory.getLogger(CommandManager.class);

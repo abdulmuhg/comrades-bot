@@ -4,7 +4,7 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
-group 'com.yourname.bot'
+group 'main.java.com.abdulmuhg.bot'
 version '1.0-SNAPSHOT'
 sourceCompatibility = JavaVersion.VERSION_11
 
@@ -36,13 +36,21 @@ dependencies {
 }
 
 application {
-    mainClass = 'com.yourname.bot.MusicBot'
+    mainClass = 'main.java.com.abdulmuhg.bot.MusicBot'
 }
 
 shadowJar {
     archiveBaseName.set('discord-music-bot')
     archiveClassifier.set('')
     archiveVersion.set('')
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs = ["src/main/resources"]
+        }
+    }
 }
 
 test {
